@@ -1,0 +1,74 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+    
+    /* 
+    Challenge:
+    Add colors to the card according to the design.
+    black - #2b2839 (the text color)
+    blue - #ddebf8
+    purple - #d8cefe
+    */
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+    background: #ffb703;
+    color: #023047;
+    border-bottom: 6px solid #219ebc;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
+p:hover, h3:hover, h4:hover {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #219ebc;
+}
+.photo-swap {
+    /* Set the initial image as the background */
+    background-image: url('images/mario_nyc2.png');
+    /* Define the size of the container */
+    width: 150px;
+    border-radius: 10px;
+    /* Optional: Ensure the background covers the area and is centered */
+    background-size: cover;
+    background-position: center;
+    /* Optional: Add a smooth transition for a nicer effect */
+    transition: background-image 0.5s ease-in-out; 
+}
+
+/* This is the magic part: when the mouse hovers over the element, change the background-image */
+.photo-swap:hover {
+    background-image: url('images/mario_nyc0.png');
+}
